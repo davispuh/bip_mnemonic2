@@ -1,0 +1,81 @@
+--- !ruby/object:Gem::Specification
+name: bip_mnemonic
+version: !ruby/object:Gem::Version
+  version: 0.0.4
+platform: ruby
+authors:
+- Sreekanth GS
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2019-06-18 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: rdoc
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+- !ruby/object:Gem::Dependency
+  name: rspec
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - ">="
+      - !ruby/object:Gem::Version
+        version: '0'
+description: This implementation conforms to BIP-39 and PBKDF2 RFC 2898, and has been
+  tested using the test vectors in https://github.com/trezor/python-mnemonic and Appendix
+  B of RFC 3962.
+email: mail@sreekanth.in
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- lib/bip_mnemonic.rb
+- words/chinese_simplified.txt
+- words/chinese_traditional.txt
+- words/english.txt
+- words/french.txt
+- words/italian.txt
+- words/japanese.txt
+- words/korean.txt
+- words/spanish.txt
+homepage: http://github.com/sreekanthgs/mnemonic
+licenses:
+- MIT
+metadata: {}
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubygems_version: 3.0.3
+signing_key: 
+specification_version: 4
+summary: BipMnemonic words and seed generator based on BIP-39
+test_files: []

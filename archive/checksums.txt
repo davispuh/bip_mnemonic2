@@ -1,0 +1,32 @@
+
+Downloaded from https://rubygems.org/downloads/bip_mnemonic-0.0.4.gem on 2025-07-07
+
+
+SHA256:
+bip_mnemonic-0.0.4.gem: de393ca091da836ec78d267e7785798189523335e20c44c109a49b08bc6e335d
+
+SHA512:
+bip_mnemonic-0.0.4.gem: 593f0baff3e98d0d0d41094343c465a03ddd8869b1df43bb34ba6f5ebe2f850cf0ceb96a19efc3e2ba2a63794e681a15f0368e18b314b9140dff6584b591397f
+
+
+
+SHA256:
+  metadata.gz: c52b1e0417d0aa33895394cc8433eddeddcb94925aa8b965ce5d3a5c00af7db6
+  data.tar.gz: 03775d6c667a228771eaa8ad63a72c835cbedfda16e49c33700ef3801a8412e7
+SHA512:
+  metadata.gz: bf82ab6d866a73c3b2cf52a9afb1a79f0a368bd22ed0603a2e23354b9761ace001202938f9ee84e94f681183869e0d39e3a6fbbe500570697446762d189ecce6
+  data.tar.gz: f7df00cf05a16987172597d14fab06fbb7f97b63031d1cb23ba70e6ff5864312300aab9d581c0457df46f0de0844f0a2747905183da0bc124f39c6f66480640e
+
+
+Checksums match for git commit 58f80a477a0b87ebea33b87754c2b104b1b5805e
+
+b510b583494bc21cdd4c1b53a288ca5e7d4c73f5c26e66af33afb12acb0e7f42  lib/bip_mnemonic.rb             archive/bip_mnemonic-0.0.4/decompressed/data/lib/bip_mnemonic.rb
+
+2eed0aef492291e061633d7ad8117f1a2b03eb80a29d0e4e3117ac2528d05ffd  words/japanese.txt              archive/bip_mnemonic-0.0.4/decompressed/data/words/japanese.txt
+2f5eed53a4727b4bf8880d8f3f199efc90e58503646d9ff8eff3a2ed3b24dbda  words/english.txt               archive/bip_mnemonic-0.0.4/decompressed/data/words/english.txt
+417b26b3d8500a4ae3d59717d7011952db6fc2fb84b807f3f94ac734e89c1b5f  words/chinese_traditional.txt   archive/bip_mnemonic-0.0.4/decompressed/data/words/chinese_traditional.txt
+46846a5a0139d1e3cb77293e521c2865f7bcdb82c44e8d0a06a2cd0ecba48c0b  words/spanish.txt               archive/bip_mnemonic-0.0.4/decompressed/data/words/spanish.txt
+5c5942792bd8340cb8b27cd592f1015edf56a8c5b26276ee18a482428e7c5726  words/chinese_simplified.txt    archive/bip_mnemonic-0.0.4/decompressed/data/words/chinese_simplified.txt
+9e95f86c167de88f450f0aaf89e87f6624a57f973c67b516e338e8e8b8897f60  words/korean.txt                archive/bip_mnemonic-0.0.4/decompressed/data/words/korean.txt
+d392c49fdb700a24cd1fceb237c1f65dcc128f6b34a8aacb58b59384b5c648c2  words/italian.txt               archive/bip_mnemonic-0.0.4/decompressed/data/words/italian.txt
+ebc3959ab7801a1df6bac4fa7d970652f1df76b683cd2f4003c941c63d517e59  words/french.txt                archive/bip_mnemonic-0.0.4/decompressed/data/words/french.txt
