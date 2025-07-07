@@ -57,6 +57,21 @@ Supported Values:
 
 ## CHANGELOG
 
+Version 2.0.0
+
+Original git repository is gone and seems this gem became abandoned.
+I think it's too risky to rely on crypto gems where author has gone.
+So I will keep maintaining it.
+
+- Didn't make any functional changes
+- Found git repo copy and verified that checksums match with original gem v0.0.4 from RubyGems
+- Updated dependencies
+- New file layout `lib/bip_mnemonic2` (You don't need to change any code)
+- Updated gem's description and homepage to point to this repo
+- Removed Codecov test dependency (it's useless)
+- Added Bundler tasks to Rakefile so you can simply do `rake install`
+- Added test case for Korean mnemonic
+
 Version 0.0.4
 
 - Added support for International Languages
