@@ -15,9 +15,7 @@ class BipMnemonic
     entropy_binary = entropy_bytes.unpack('B*').first
     seed_binary = entropy_binary + checksum(entropy_binary)
     words_array = File.readlines(
-      File.join(
-        File.dirname(File.expand_path(__FILE__)), '../words/', language + '.txt'
-      )
+      File.join(__dir__, '../../words/', language + '.txt')
     ).map(&:strip)
     seed_binary.chars
                .each_slice(11)
@@ -33,9 +31,7 @@ class BipMnemonic
     raise ArgumentError, 'Mnemonic not set' if options[:mnemonic].nil?
     raise ArgumentError, 'Mnemonic is empty' if options[:mnemonic].empty?
     words_array = File.readlines(
-      File.join(
-        File.dirname(File.expand_path(__FILE__)), '../words/', language + '.txt'
-      )
+      File.join(__dir__, '../../words/', language + '.txt')
     ).map(&:strip)
     mnemonic_array = options[:mnemonic].split(' ').map do |word|
       word_index = words_array.index(word)
