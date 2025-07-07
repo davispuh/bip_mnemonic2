@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    bip_mnemonic (0.0.4)
+    bip_mnemonic2 (2.0.0)
 
 GEM
   remote: https://rubygems.org/
@@ -85,7 +85,7 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  bip_mnemonic!
+  bip_mnemonic2!
   codecov
   guard
   guard-rspec

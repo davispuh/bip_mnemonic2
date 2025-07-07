@@ -1,5 +1,5 @@
 require 'rspec/core/rake_task'
-require 'bip_mnemonic'
+require 'bip_mnemonic2'
 
 RSpec::Core::RakeTask.new(:spec)
 

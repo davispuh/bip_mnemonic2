@@ -1,6 +1,6 @@
 require 'openssl'
-class BipMnemonic
-  VERSION = '0.0.4'.freeze
+
+module BipMnemonic
 
   def self.to_mnemonic(options)
     options ||= {}
@@ -61,4 +61,5 @@ class BipMnemonic
       OpenSSL::Digest::SHA512.new
     ).unpack('H*')[0]
   end
+
 end
