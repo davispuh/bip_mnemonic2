@@ -1,6 +1,7 @@
 require File.dirname(__FILE__) + '/spec_helper.rb'
 
 describe 'BipMnemonic class' do
+
   context 'generates correct' do
     it 'mnemonic for entropy 00000000000000000000000000000000' do
       expect(BipMnemonic.to_mnemonic(entropy: '00000000000000000000000000000000')).to eql 'abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about'
@@ -147,6 +148,13 @@ describe 'BipMnemonic class' do
       expect(BipMnemonic.to_entropy(mnemonic: 'void come effort suffer camp survey warrior heavy shoot primary clutch crush open amazing screen patrol group space point ten exist slush involve unfold')).to eq 'f585c11aec520db57dd353c69554b21a89b20fb0650966fa0a9d6f74fd989d8f'
     end
   end
+
+  context 'generates correct multilingual' do
+    it 'Korean mnemonic for entropy 00000000000000000000000000000000' do
+      expect(BipMnemonic.to_mnemonic(entropy: '00000000000000000000000000000000', language: 'korean')).to eql "가격 가격 가격 가격 가격 가격 가격 가격 가격 가격 가격 가능"
+    end
+  end
+
   context 'correct count of mnemonic words for' do
     it '128 bits' do
       expect(BipMnemonic.to_mnemonic(bits: 128).split.count).to eq 12
@@ -170,6 +178,7 @@ describe 'BipMnemonic class' do
       expect(BipMnemonic.to_mnemonic(bits: 512).split.count).to eq 48
     end
   end
+
   context 'does not generate same words for 128 bits for ' do
     it '10 iterations' do
       expect(10.times.inject([]){ |arr| arr << BipMnemonic.to_mnemonic(bits:128) }.uniq.count).to eq 10
@@ -184,6 +193,7 @@ describe 'BipMnemonic class' do
       expect(2048.times.inject([]){ |arr| arr << BipMnemonic.to_mnemonic(bits:128) }.uniq.count).to eq 2048
     end
   end
+
   context 'does not generate same words for 256 bits for ' do
     it '10 iterations' do
       expect(10.times.inject([]){ |arr| arr << BipMnemonic.to_mnemonic(bits:256) }.uniq.count).to eq 10
@@ -198,6 +208,7 @@ describe 'BipMnemonic class' do
       expect(2048.times.inject([]){ |arr| arr << BipMnemonic.to_mnemonic(bits:256) }.uniq.count).to eq 2048
     end
   end
+
   context 'does not generate same words for 512 bits for ' do
     it '10 iterations' do
       expect(10.times.inject([]){ |arr| arr << BipMnemonic.to_mnemonic(bits:512) }.uniq.count).to eq 10
@@ -212,6 +223,7 @@ describe 'BipMnemonic class' do
       expect(2048.times.inject([]){ |arr| arr << BipMnemonic.to_mnemonic(bits:512) }.uniq.count).to eq 2048
     end
   end
+
   context 'generates correct seed for' do
     it 'mnemonic "abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about"' do
       expect(BipMnemonic.to_seed(password: 'TREZOR', mnemonic: 'abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon abandon about')).to eq 'c55257c360c07c72029aebc1b53c05ed0362ada38ead3e3e9efa3708e53495531f09a6987599d18264c1e1c92f2cf141630c7a3c4ab7c81b2f001698e7463b04'
@@ -286,4 +298,5 @@ describe 'BipMnemonic class' do
       expect(BipMnemonic.to_seed(password: 'TREZOR', mnemonic: 'void come effort suffer camp survey warrior heavy shoot primary clutch crush open amazing screen patrol group space point ten exist slush involve unfold')).to eql '01f5bced59dec48e362f2c45b5de68b9fd6c92c6634f44d6d40aab69056506f0e35524a518034ddc1192e1dacd32c1ed3eaa3c3b131c88ed8e7e54c49a5d0998'
     end
   end
+
 end
