@@ -1,7 +1,5 @@
 [![Build Status](https://travis-ci.org/sreekanthgs/bip_mnemonic.svg?branch=master)](https://travis-ci.org/sreekanthgs/bip_mnemonic)
 [![Gem Version](https://d25lcipzij17d.cloudfront.net/badge.svg?id=rb&type=6&v=0.0.4&x2=0)](https://badge.fury.io/rb/bip_mnemonic)
-[![codecov](https://codecov.io/gh/sreekanthgs/bip_mnemonic/branch/master/graph/badge.svg)](https://codecov.io/gh/sreekanthgs/bip_mnemonic)
-
 
 # README
 
